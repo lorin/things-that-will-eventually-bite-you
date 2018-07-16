@@ -33,7 +33,9 @@ removed from pure thought-stuff. He builds his castles in the air, from air,
 creating by exertion of the imagination."
 
 The problem is that software runs on actual, physical machines, and those
-machines have finite reosurces, and those resources can be exhausted. 
+machines have finite resources, and those resources can be exhausted. 
+
+The obvious ones are CPU, memory, and disk space, but there are others.
 
 ### Out of file descriptors
 
