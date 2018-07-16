@@ -1,7 +1,7 @@
 # Things that will eventually bite you
 
 There are many, many things that can bite you as a software engineer who works
-on dsitributed systems. I've decided to start collecting them.
+on distributed systems. I've decided to start collecting them.
 
 ## Category: missing limit
 
@@ -54,7 +54,9 @@ calcluations.
 
 ### Time zone calculations
 
-See [the.endoftimezones.com] by [@aaronblohowiak].
+Time zone calculations are invariably horrible (Do you know your UTC offset?)
+
+The motivation for see [the.endoftimezones.com] by [@aaronblohowiak].
 
 [the.endoftimezones.com]: http://the.endoftimezones.com/
 
