@@ -1,4 +1,4 @@
-# Things that will eventually bite you
+# Things that will eventually bite you as a back-end software engineer
 
 There are many, many things that can bite you as a software engineer who works
 on distributed systems. I've decided to start collecting them.
