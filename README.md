@@ -20,10 +20,13 @@ Distributed Systems" which unfortunately has been removed from the Internet.
 
 ### Missing timeout on a network call
 
+Eventually, a network call you make is going to block "forever".
+
 ### Incorrect database query whose scope was too great
 
-The equivalent of `select * from ...`. Ad-hoc queries are one of the most
-dangerous queries of this type, because those are user-initiated.
+The equivalent of `select * from ...`.
+
+Ad-hoc queries are one of the most dangerous queries of this type, because those are user-initiated.
 
 
 ## Resource exhaustion
