@@ -63,3 +63,17 @@ The motivation for see [the.endoftimezones.com] by [@aaronblohowiak].
 [@aaronblohowiak]: https://twitter.com/aaronblohowiak
 
 
+## Category: Miscellaneous interactions
+
+### Synchronized clients
+
+Clients become synchronized in their interactions with a server. For example, a
+service that provides leases goes down, and then comes back up, and all of the
+clients get a lease that expires at the same time, and so they all renew at the
+same time.
+
+Synchronized retries is another example.
+
+
+Typically, if you see code that uses jitter in a timeout or lease expirationi
+time, it's because somebody got bit by this.
