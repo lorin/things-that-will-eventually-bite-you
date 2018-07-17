@@ -62,6 +62,13 @@ The motivation for see [the.endoftimezones.com] by [@aaronblohowiak].
 
 [@aaronblohowiak]: https://twitter.com/aaronblohowiak
 
+## Category: Things not running where you think they will
+
+Credit to [@aaronblohowiak] for these.
+
+### Dev or test talks to prod
+
+### Code not intended for prod runs in prod
 
 ## Category: Miscellaneous interactions
 
