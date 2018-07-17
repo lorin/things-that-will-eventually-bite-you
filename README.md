@@ -40,11 +40,10 @@ machines have finite resources, and those resources can be exhausted.
 
 The obvious ones are CPU, memory, and disk space, but there are others.
 
-### Out of file descriptors
+### Out of inodes
 
-You can run out of file descriptors if you create too many files. On Linux,
+You can run out of inodes if you create too many files. On Linux,
 the resulting error message is, confusingly, "No space left on device".
-
 
 ## Category: incorrect time calculations
 
