@@ -83,3 +83,43 @@ Synchronized retries is another example.
 
 Typically, if you see code that uses jitter in a timeout or lease expirationi
 time, it's because somebody got bit by this.
+
+### Implicit contract
+
+At some point, you're going to replace a function/module/service with something which
+you think implements the same API, yet still causes things to break. There's
+some implicit assumption that's no longer true with the replacement thing.
+
+See also [Hyrum's Law][hyrum]
+
+[hyrum]: http://www.hyrumslaw.com/
+
+## Category: Errors and failures
+
+### Incorrect exception handling
+
+Exception-handling code paths are much less likely to be exercised, either in
+automated tests, manual tests, or even when the service has been in production
+for a while.
+
+This means that there are all sorts of opportunities for incorrect behavior
+when an uncommon error happened that results in an exception.
+
+For more details, see: [Simple Testing Can Prevent Most Critical Failures: An Analysis of Production Failures in Distributed Data-Intensive Systems][exception-paper]
+by Yuan et al.
+
+[exception-paper]: https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf
+
+### Gray failures
+
+Sometimes systems undergo partial failures where the system isn't working quite
+right (e.g., it's very slow), but it's still behaving well enough that none of
+your alerts have triggered to notify you that this is an issue.
+
+See [Gray Failure: THe Achilles' Heel of Cloud-Scale Systems][gray-failure] by
+Huang et al.
+
+[gray-failure]: https://www.cs.jhu.edu/~huang/paper/grayfailure-hotos17.pdf
+
+
+
