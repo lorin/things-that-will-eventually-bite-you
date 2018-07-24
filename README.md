@@ -11,12 +11,15 @@ i's much greater than we ever expected.
 Also, for many APIs, it's simpler to not specify a limit. When the wrong
 thing is easier than the right thing, the wrong thing is going to happen.
 
-### Unbounded queue
+### Unbounded queue 
 
 Queues that can grow without limit can lead to resource exhaustion. [Jeff
 Hodges](https://www.somethingsimilar.com/about) mentioned this in a great talk
 he dd at RICON West 2013 entitled "Practicalities of Productionizing
 Distributed Systems" which unfortunately has been removed from the Internet.
+
+### Missing backpressure
+
 
 ### Missing timeout on a network call
 
@@ -120,6 +123,12 @@ See [Gray Failure: THe Achilles' Heel of Cloud-Scale Systems][gray-failure] by
 Huang et al.
 
 [gray-failure]: https://www.cs.jhu.edu/~huang/paper/grayfailure-hotos17.pdf
+
+## Category: incorrect model of the world
+
+### Stale cached data about state of the world
+
+
 
 
 
